@@ -84,6 +84,12 @@ label {
 
 /* 기본 CSS 시작 */
 
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+}
+
 .container{
     background-color:#f8f8f8;
 	min-height:100%;
@@ -106,15 +112,19 @@ label {
 
 .section{
     width:95%;
-    margin: 0px auto 0; /* 가로 정렬 */
+	margin: 0px auto 0; /* 가로 정렬 */
+	min-height: 100%;
+	padding-bottom: 59px; /* section 내용물과 footer 안겹치게 함*/
 }
 
 .footer{
-    position: relative;
-    margin-top: 40px;
-    height: auto;
+    position: absolute;
+    height: 59px;
     background-color: #fff;
-    border-top: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 .footer_info{
